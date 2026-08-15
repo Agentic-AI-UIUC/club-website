@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join — Agentic AI @ UIUC</title>
+<meta name="description" content="Join UIUC's largest AI club — Discord and membership signup.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">AGENTIC<em>AI</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="events.html">Events</a></li>
+  </ul>
+  <a class="btn btn-fill btn-sm" href="join.html" aria-current="page">Join us →</a>
+</nav>
+
+<header class="hero">
+  <p class="kicker reveal">/// No experience required</p>
+  <h1 class="mega">
+    <span class="reveal">Get in.</span>
+    <span class="stroke reveal">Build things.</span>
+  </h1>
+  <div class="hero-row">
+    <p class="hero-sub">Two steps: hop in the Discord for day-to-day chatter, and sign up so we can count you and send the weekly schedule.</p>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner">&nbsp;ALL MAJORS ✦ NO PREREQUISITES ✦ FREE TO JOIN ✦ LECTURES MONDAYS ✦ WORKSHOPS THURSDAYS ✦&nbsp;ALL MAJORS ✦ NO PREREQUISITES ✦ FREE TO JOIN ✦ LECTURES MONDAYS ✦ WORKSHOPS THURSDAYS ✦</div>
+</div>
+
+<section>
+  <div class="join-grid">
+    <div class="join-panel">
+      <h3>01 · Discord</h3>
+      <p>Where everything happens — announcements, workshop help, project teams, memes. Join first.</p>
+      <!-- ponytail: replace # with the real Discord invite URL -->
+      <a class="btn btn-fill" href="#">Join the Discord →</a>
+    </div>
+    <div class="join-panel">
+      <h3>02 · Sign up</h3>
+      <p>Get on the member list and the weekly email.</p>
+      <!-- ponytail: static form, no backend — point action at your Formspree/Google Form endpoint -->
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">Illinois email</label>
+        <input id="email" name="email" type="email" placeholder="netid@illinois.edu" autocomplete="email" required>
+        <label for="major">Major</label>
+        <input id="major" name="major" type="text">
+        <label for="year">Year</label>
+        <select id="year" name="year">
+          <option>Freshman</option>
+          <option>Sophomore</option>
+          <option>Junior</option>
+          <option>Senior</option>
+          <option>Grad student</option>
+        </select>
+        <button class="btn btn-fill" type="submit">Sign me up</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>See you Monday.</h2>
+  <p>Lectures start at week 1 with zero assumed background. Bring a laptop on Thursdays.</p>
+  <a class="btn btn-ghost" href="events.html">Check the schedule</a>
+</div>
+
+<footer>
+  <a class="logo" href="index.html">AGENTIC<em>AI</em></a>
+  <ul>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="join.html">Join</a></li>
+  </ul>
+  <span>Agentic AI @ UIUC · Urbana-Champaign, IL</span>
+</footer>
+
+</body>
+</html>

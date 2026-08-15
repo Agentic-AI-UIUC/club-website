@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Agentic AI @ UIUC</title>
+<meta name="description" content="30+ member-built agent projects shipped last semester at UIUC's largest AI club.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">AGENTIC<em>AI</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html" aria-current="page">Projects</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="events.html">Events</a></li>
+  </ul>
+  <a class="btn btn-fill btn-sm" href="join.html">Join us →</a>
+</nav>
+
+<header class="hero">
+  <p class="kicker reveal">/// Spring 2026 cohort · member-built</p>
+  <h1 class="mega">
+    <span class="reveal">30+ things</span>
+    <span class="stroke reveal">we shipped.</span>
+  </h1>
+  <div class="hero-row">
+    <p class="hero-sub">Every project below was built by members during the semester — most started as a Thursday workshop and kept going.</p>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner">&nbsp;AGENTS ✦ RAG ✦ MULTI-AGENT ✦ EVALS ✦ VOICE ✦ BUILT WITH CLAUDE CODE · CODEX · OPENCLAW ✦&nbsp;AGENTS ✦ RAG ✦ MULTI-AGENT ✦ EVALS ✦ VOICE ✦ BUILT WITH CLAUDE CODE · CODEX · OPENCLAW ✦</div>
+</div>
+
+<section>
+  <div class="section-head">
+    <h2>Past work</h2>
+    <span class="count">SHIPPED &amp; RECOGNIZED</span>
+  </div>
+  <div class="feature-row">
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/ONOMo_dVYHA" title="Agentic AI @ UIUC — featured by the Center for Innovation in Teaching &amp; Learning" allowfullscreen></iframe>
+    </div>
+    <div class="feature-copy">
+      <p class="cat">Recognition</p>
+      <h3>Featured by UIUC's Center for Innovation in Teaching &amp; Learning</h3>
+      <p>CITL at Illinois spotlighted the club and its work bringing agentic AI to campus.</p>
+    </div>
+  </div>
+  <div class="grid-3" style="margin-top:18px">
+    <a class="card" href="https://www.linkedin.com/feed/update/urn:li:activity:7458550226455511040" target="_blank" rel="noopener">
+      <p class="cat">Voice · Healthcare</p>
+      <h3>Agentic Medical Voice Agent ↗</h3>
+      <p>Automates appointment scheduling, triage, and rescheduling for campus clinics — patients book by natural-language call while staff watch a live dashboard.</p>
+    </a>
+    <a class="card" href="https://www.linkedin.com/feed/update/urn:li:activity:7459603273407283200" target="_blank" rel="noopener">
+      <p class="cat">RAG · Healthcare</p>
+      <h3>Metalist ↗</h3>
+      <p>A multi-agent medical assistant with a source-grounded Patient Mode for medical Q&amp;A and a Doctor Practice Mode that scores clinical interview simulations.</p>
+    </a>
+    <a class="card" href="https://www.linkedin.com/feed/update/urn:li:activity:7459335691009937409" target="_blank" rel="noopener">
+      <p class="cat">Automation</p>
+      <h3>Resrv ↗</h3>
+      <p>An autonomous queue system for UIUC's Student Creative Design facility — Discord integration, staff analytics, and AI-powered feedback collection.</p>
+    </a>
+    <a class="card" href="https://www.linkedin.com/feed/update/urn:li:activity:7458261049910345728" target="_blank" rel="noopener">
+      <p class="cat">Data · Agents</p>
+      <h3>Aegis ↗</h3>
+      <p>An open-source agent that monitors databases for data-quality issues, finds root causes, scopes the impact, and proposes or executes fixes on its own.</p>
+    </a>
+    <a class="card" href="https://www.linkedin.com/feed/update/urn:li:activity:7449814474099724290" target="_blank" rel="noopener">
+      <p class="cat">Competition</p>
+      <h3>NanoClaw Competition ↗</h3>
+      <p>A club-run challenge: build a lightweight AI agent that helps you study — $1,000 prize for the best submission.</p>
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <h2>Project archive</h2>
+    <span class="count" id="proj-count"></span>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filter projects by category">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="finance">Finance</button>
+    <button data-filter="healthcare">Healthcare</button>
+    <button data-filter="sports">Sports</button>
+    <button data-filter="campus">Campus</button>
+    <button data-filter="lifestyle">Lifestyle</button>
+    <button data-filter="infra">Infra &amp; Data</button>
+  </div>
+
+  <div class="grid-3" id="proj-grid">
+    <a class="card" data-cat="healthcare" href="https://github.com/Agentic-AI-UIUC/Agentic-Medical-Voice-Agent" target="_blank" rel="noopener"><p class="cat">In-house · Healthcare · Voice</p><h3>Agentic-Medical-Voice-Agent</h3><p>Voice agent that handles appointment scheduling, triage, and rescheduling for campus clinics over natural-language calls.</p></a>
+    <a class="card" data-cat="healthcare" href="https://github.com/Agentic-AI-UIUC/agentic-ai-healthcare-search" target="_blank" rel="noopener"><p class="cat">In-house · Healthcare · RAG</p><h3>agentic-ai-healthcare-search</h3><p>Metalist — a multi-agent medical assistant with source-grounded Patient Mode and a scored Doctor Practice Mode.</p></a>
+    <a class="card" data-cat="campus" href="https://github.com/Agentic-AI-UIUC/Resrv" target="_blank" rel="noopener"><p class="cat">In-house · Campus</p><h3>Resrv</h3><p>An autonomous queue-based system for accessing fabrication machines at UIUC's Student Creative Design facility.</p></a>
+    <a class="card" data-cat="finance" href="https://github.com/Agentic-AI-UIUC/Agentic-Equity-Analyst" target="_blank" rel="noopener"><p class="cat">In-house · Finance</p><h3>Agentic-Equity-Analyst</h3><p>An agent that researches and analyzes equities end to end. Spring cohort build.</p></a>
+    <a class="card" data-cat="finance" href="https://github.com/Agentic-AI-UIUC/fall-agentic-ai-equity-analyst" target="_blank" rel="noopener"><p class="cat">In-house · Finance</p><h3>fall-agentic-ai-equity-analyst</h3><p>The fall cohort's take on an autonomous equity research analyst.</p></a>
+    <a class="card" data-cat="finance" href="https://github.com/Agentic-AI-UIUC/fall-agentic-ai-portfolio-manager" target="_blank" rel="noopener"><p class="cat">In-house · Finance</p><h3>fall-agentic-ai-portfolio-manager</h3><p>An agentic portfolio manager that reasons about allocation and rebalancing.</p></a>
+    <a class="card" data-cat="sports" href="https://github.com/Agentic-AI-UIUC/Agentic-Sports-Analyst" target="_blank" rel="noopener"><p class="cat">In-house · Sports</p><h3>Agentic-Sports-Analyst</h3><p>An agent that digs through sports data to produce analysis and picks. Spring cohort build.</p></a>
+    <a class="card" data-cat="sports" href="https://github.com/Agentic-AI-UIUC/agentic-ai-sports-analyst" target="_blank" rel="noopener"><p class="cat">In-house · Sports</p><h3>agentic-ai-sports-analyst</h3><p>The fall cohort's sports analysis agent, notebook-first.</p></a>
+    <a class="card" data-cat="lifestyle" href="https://github.com/Agentic-AI-UIUC/Agentic-Food-Finder-Project" target="_blank" rel="noopener"><p class="cat">In-house · Lifestyle</p><h3>Agentic-Food-Finder-Project</h3><p>An agent that finds what and where to eat, so you don't have to decide.</p></a>
+    <a class="card" data-cat="lifestyle" href="https://github.com/Agentic-AI-UIUC/fall-agentic-ai-music-recommendation-system" target="_blank" rel="noopener"><p class="cat">In-house · Lifestyle</p><h3>fall-agentic-ai-music-recommendation-system</h3><p>An agentic music recommender built by the fall cohort.</p></a>
+    <a class="card" data-cat="finance" href="https://github.com/OpenAgents-Illinois/market-pulse" target="_blank" rel="noopener"><p class="cat">Open source · Finance</p><h3>market-pulse</h3><p>A terminal dashboard that reads your real brokerage holdings via Plaid, fans out to market/news/macro agents, and explains in plain English why your portfolio shifted today.</p></a>
+    <a class="card" data-cat="finance" href="https://github.com/OpenAgents-Illinois/vaultra" target="_blank" rel="noopener"><p class="cat">Open source · Finance</p><h3>vaultra</h3><p>A fintech agent small businesses "hire" to proactively improve creditworthiness and funding readiness.</p></a>
+    <a class="card" data-cat="finance" href="https://github.com/OpenAgents-Illinois/personal-finance-agent" target="_blank" rel="noopener"><p class="cat">Open source · Finance</p><h3>personal-finance-agent</h3><p>A personal finance agent built with Ruby on Rails and Plaid.</p></a>
+    <a class="card" data-cat="sports" href="https://github.com/OpenAgents-Illinois/illini-intel" target="_blank" rel="noopener"><p class="cat">Open source · Sports</p><h3>illini-intel</h3><p>Agentic business intelligence for the Fighting Illini basketball team.</p></a>
+    <a class="card" data-cat="sports" href="https://github.com/OpenAgents-Illinois/f1-strategist.ai" target="_blank" rel="noopener"><p class="cat">Open source · Sports</p><h3>f1-strategist.ai</h3><p>Real-time F1 race strategy recommendations from a multi-agent swarm running on live OpenF1 telemetry.</p></a>
+    <a class="card" data-cat="infra" href="https://github.com/OpenAgents-Illinois/Aegis" target="_blank" rel="noopener"><p class="cat">Open source · Infra &amp; Data</p><h3>Aegis</h3><p>An agent that monitors databases for data-quality issues, finds root causes, and proposes or executes fixes.</p></a>
+    <a class="card" data-cat="infra" href="https://github.com/OpenAgents-Illinois/ev-battery-agent" target="_blank" rel="noopener"><p class="cat">Open source · Infra &amp; Data</p><h3>ev-battery-agent</h3><p>A Go agent that monitors EV battery health and files Jira tickets when safety thresholds are violated.</p></a>
+    <a class="card" data-cat="infra" href="https://github.com/OpenAgents-Illinois/UrbanOps" target="_blank" rel="noopener"><p class="cat">Open source · Infra &amp; Data</p><h3>UrbanOps</h3><p>A smart-city operations platform unifying live traffic, transit, incident, and weather data into one map for city operators.</p></a>
+    <a class="card" data-cat="campus" href="https://github.com/OpenAgents-Illinois/design-loop" target="_blank" rel="noopener"><p class="cat">Open source · Campus</p><h3>design-loop</h3><p>LeetCode for system design — practice interviews powered by AI agents.</p></a>
+    <a class="card" data-cat="campus" href="https://github.com/OpenAgents-Illinois/PitchPilot" target="_blank" rel="noopener"><p class="cat">Open source · Campus</p><h3>PitchPilot</h3><p>An AI mock presentation panel that evaluates your content, delivery, and Q&amp;A readiness before class presentations.</p></a>
+    <a class="card" data-cat="lifestyle" href="https://github.com/OpenAgents-Illinois/soul-sync" target="_blank" rel="noopener"><p class="cat">Open source · Lifestyle</p><h3>soul-sync</h3><p>Using AI agents to improve your dating life.</p></a>
+  </div>
+  <p style="margin-top:26px; display:flex; gap:12px; flex-wrap:wrap"><a class="btn btn-ghost btn-sm" href="https://github.com/orgs/Agentic-AI-UIUC/repositories" target="_blank" rel="noopener">In-house projects · Agentic-AI-UIUC ↗</a><a class="btn btn-ghost btn-sm" href="https://github.com/orgs/OpenAgents-Illinois/repositories" target="_blank" rel="noopener">Open-source projects · OpenAgents-Illinois ↗</a></p>
+</section>
+
+<div class="cta-band">
+  <h2>Your project<br>goes here.</h2>
+  <p>Every card above started with someone showing up to a Thursday workshop.</p>
+  <a class="btn btn-fill" href="join.html">Join Agentic AI</a>
+</div>
+
+<footer>
+  <a class="logo" href="index.html">AGENTIC<em>AI</em></a>
+  <ul>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="join.html">Join</a></li>
+  </ul>
+  <span>Agentic AI @ UIUC · Urbana-Champaign, IL</span>
+</footer>
+
+<script>
+  const buttons = document.querySelectorAll('.filters button');
+  const cards = document.querySelectorAll('#proj-grid .card');
+  const count = document.getElementById('proj-count');
+  function apply(filter) {
+    let shown = 0;
+    cards.forEach(c => {
+      const show = filter === 'all' || c.dataset.cat === filter;
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    count.textContent = shown + ' PROJECTS';
+  }
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    apply(b.dataset.filter);
+  }));
+  apply('all');
+</script>
+
+</body>
+</html>

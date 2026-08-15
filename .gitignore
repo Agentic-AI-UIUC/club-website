@@ -1,0 +1,10 @@
+.DS_Store
+# specs/plans/agent docs stay local — never committed
+docs/design/
+docs/plans/
+docs/superpowers/
+CLAUDE.md
+AGENTS.md
+*-spec.md
+*-plan.md
+.claude/memory/
