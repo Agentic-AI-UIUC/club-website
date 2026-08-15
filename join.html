@@ -45,26 +45,28 @@
       <a class="btn btn-fill" href="https://discord.gg/PyGcv3VufB" target="_blank" rel="noopener">Join the Discord →</a>
     </div>
     <div class="join-panel">
-      <h3>02 · Sign up</h3>
-      <p>Get on the member list and the weekly email.</p>
-      <!-- ponytail: static form, no backend — point action at your Formspree/Google Form endpoint -->
-      <form action="#" method="post">
+      <h3>02 · Interest form</h3>
+      <p>Get on the member list for Fall 26 — submissions go straight to the club's records.</p>
+      <!-- Submits into the "Agentic AI @ UIUC Interest Form Fall 26" Google Form via its formResponse endpoint -->
+      <form id="interest-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdP7zYvn85gYaoUmBA7N0ISmbwy2xSZNMWbFw03sqRao8aJ4Q/formResponse" method="post" target="gform-sink">
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" autocomplete="name" required>
-        <label for="email">Illinois email</label>
-        <input id="email" name="email" type="email" placeholder="netid@illinois.edu" autocomplete="email" required>
+        <input id="name" name="entry.1332259574" type="text" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="entry.688562147" type="email" placeholder="netid@illinois.edu" autocomplete="email" required>
         <label for="major">Major</label>
-        <input id="major" name="major" type="text">
-        <label for="year">Year</label>
-        <select id="year" name="year">
-          <option>Freshman</option>
-          <option>Sophomore</option>
-          <option>Junior</option>
-          <option>Senior</option>
-          <option>Grad student</option>
+        <input id="major" name="entry.1487627158" type="text">
+        <label for="position">Interested position</label>
+        <select id="position" name="entry.1738427521" required>
+          <option value="Member-Attend lectures and workshops">Member — attend lectures &amp; workshops</option>
+          <option value="MTS(Project Developer)-Attend lectures and actively participate in projects">MTS (Project Developer) — lectures + club projects</option>
+          <option value="MTS(Open-Source Developer) - Attend lectures and contribute to opensource projects">MTS (Open-Source Developer) — lectures + open-source projects</option>
         </select>
+        <label for="questions">Questions? <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+        <input id="questions" name="entry.1791381479" type="text">
         <button class="btn btn-fill" type="submit">Sign me up</button>
+        <p id="form-done" hidden style="color:#3ddc84; font-weight:600; margin-top:16px">You're signed up — see you Monday. ✦</p>
       </form>
+      <iframe name="gform-sink" style="display:none" aria-hidden="true"></iframe>
     </div>
   </div>
 </section>
@@ -74,6 +76,20 @@
   <p>Lectures start at week 1 with zero assumed background. Bring a laptop on Thursdays.</p>
   <a class="btn btn-ghost" href="events.html">Check the schedule</a>
 </div>
+
+<script>
+  // Google gives no CORS/response signal; the hidden iframe's load event after a
+  // submit is the only "it went through" we get.
+  const form = document.getElementById('interest-form');
+  const sink = document.querySelector('iframe[name="gform-sink"]');
+  let submitted = false;
+  form.addEventListener('submit', () => { submitted = true; });
+  sink.addEventListener('load', () => {
+    if (!submitted) return;
+    document.getElementById('form-done').hidden = false;
+    form.querySelector('button').disabled = true;
+  });
+</script>
 
 <footer>
   <a class="logo" href="index.html">AGENTIC<em>AI</em></a>
