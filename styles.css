@@ -105,6 +105,11 @@ section { padding: clamp(40px, 6vw, 72px) var(--pad); }
 .section-head h2 { font-family: var(--display); font-size: clamp(32px, 5vw, 52px); text-transform: uppercase; font-weight: 400; }
 .section-head .count { font-family: var(--mono); color: var(--orange); font-size: 14px; font-weight: 700; }
 
+/* ---------- section photo ---------- */
+.section-photo { margin: 0 0 24px; }
+.section-photo img { width: 100%; max-height: 440px; object-fit: cover; border-radius: 16px; border: 1px solid var(--line); }
+.section-photo figcaption { font-family: var(--mono); font-size: 12px; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 12px; }
+
 /* ---------- cards ---------- */
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
 .card {
