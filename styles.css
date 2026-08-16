@@ -51,6 +51,15 @@ nav {
 .btn-sm { padding: 9px 22px; font-size: 14px; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
 
+/* ---------- photo hero (home) ---------- */
+.photo-hero {
+  background:
+    linear-gradient(180deg, rgba(13, 13, 13, 0.82), rgba(13, 13, 13, 0.6) 55%, var(--black)),
+    url("assets/quad-night.png") center 65% / cover no-repeat;
+  padding-bottom: clamp(32px, 5vw, 52px);
+}
+.photo-hero + .ticker { margin-top: 0; }
+
 /* ---------- hero ---------- */
 .hero { padding: clamp(36px, 6vw, 64px) var(--pad) 0; }
 .kicker { font-family: var(--mono); font-size: 13px; color: var(--orange); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; }
