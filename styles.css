@@ -55,7 +55,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .photo-hero {
   background:
     linear-gradient(180deg, rgba(13, 13, 13, 0.82), rgba(13, 13, 13, 0.6) 55%, var(--black)),
-    url("assets/quad-night.png") center 65% / cover no-repeat;
+    url("assets/scd-night.png") center 40% / cover no-repeat;
   padding-bottom: clamp(32px, 5vw, 52px);
 }
 .photo-hero + .ticker { margin-top: 0; }
