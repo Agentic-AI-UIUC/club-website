@@ -13,18 +13,21 @@ framework and no build step.
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Landing page — hero, ticker, what-we-do, stats, schedule teaser |
+| `index.html` | Home page — consulting pitch, clients, services, selected work, community, people |
+| `hero-waves.js` | Canvas light-wave animation for the home hero |
 | `events.html` | Full 12-week Fall 2026 lecture + workshop schedule |
 | `projects.html` | Past work (video feature, LinkedIn spotlights) + filterable project archive |
 | `team.html` | Current exec and alumni exec |
 | `join.html` | Discord link + membership signup form |
+| `socials.html` | Instagram, Discord, LinkedIn and Linktree links |
 | `styles.css` | Shared design tokens and styles |
-| `assets/team/` | Exec headshots |
+| `assets/team/` | Board and staff headshots |
+| `assets/clients/` | Client and partner logos |
 
 ## Setup
 
-No dependencies beyond a browser. Fonts (Anton, Archivo, JetBrains Mono) load
-from Google Fonts, and the YouTube embed on the projects page needs network
+No dependencies beyond a browser. Fonts (IBM Plex Sans/Mono on the home page;
+Anton, Archivo, JetBrains Mono elsewhere) load from Google Fonts, and the YouTube embed on the projects page needs network
 access — everything else is fully local.
 
 ## Usage

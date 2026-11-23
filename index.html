@@ -3,135 +3,269 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agentic AI @ UIUC — The Largest AI Club at Illinois</title>
-<meta name="description" content="UIUC's largest AI club. Weekly build nights on Mondays and 30+ member projects shipped last semester.">
+<title>Agentic AI @ UIUC — AI solutions, built at Illinois</title>
+<meta name="description" content="Student AI consultants at the University of Illinois. Real clients, shipped systems, and weekly build nights.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home">
 
-<div class="photo-hero">
-<nav>
-  <a class="logo" href="index.html"><img src="assets/logo.png" alt="Agentic AI"></a>
-  <ul class="nav-links">
-    <li><a href="index.html" aria-current="page">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="events.html">Events</a></li>
-  </ul>
-  <a class="btn btn-fill btn-sm" href="join.html">Join us →</a>
+<nav class="topnav">
+  <a class="topnav-logo" href="#top"><img src="assets/agentic-white.png" alt="Agentic AI @ UIUC"></a>
+  <div class="topnav-links">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#community">Community</a>
+    <a href="team.html">People</a>
+    <a href="socials.html">Socials</a>
+  </div>
+  <div class="button-row button-row-tight">
+    <a class="button button-sm button-ghost" href="#join">Join</a>
+    <a class="button button-sm button-orange" href="#join">Work with us</a>
+  </div>
 </nav>
 
-<header class="hero">
-  <p class="kicker reveal">/// UIUC's largest AI club</p>
-  <h1 class="mega">
-    <span class="reveal">Build</span>
-    <span class="reveal">agents.</span>
-    <span class="stroke reveal">Ship fast.</span>
-  </h1>
-  <div class="hero-row">
-    <p class="hero-sub">Weekly build nights on Mondays and a project culture that shipped 30+ builds last semester.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-fill" href="join.html">Join the club</a>
-      <a class="btn btn-ghost" href="projects.html">See projects</a>
+<header id="top" class="splash">
+  <canvas id="hero-canvas"></canvas>
+  <div class="splash-fade"></div>
+  <div class="splash-inner">
+    <h1>AI solutions, built at <span class="nowrap illinois-lockup"><img class="block-i" src="assets/illinois-block-i.png" alt="University of Illinois logo">ILLINOIS</span></h1>
+    <div class="splash-row">
+      <p class="splash-lede">Student consultants. Real clients. Shipped systems.</p>
+      <div class="button-row">
+        <a class="button button-orange" href="#join">Work with us</a>
+        <a class="button button-glass" href="#join">Join a team</a>
+      </div>
     </div>
   </div>
 </header>
-</div>
 
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-inner">&nbsp;LECTURES EVERY MONDAY ✦ CLAUDE CODE WORKSHOPS EVERY THURSDAY ✦ 30+ PROJECTS SHIPPED ✦ LARGEST AI CLUB AT UIUC ✦ 12-WEEK AGENTIC AI CURRICULUM ✦&nbsp;LECTURES EVERY MONDAY ✦ CLAUDE CODE WORKSHOPS EVERY THURSDAY ✦ 30+ PROJECTS SHIPPED ✦ LARGEST AI CLUB AT UIUC ✦ 12-WEEK AGENTIC AI CURRICULUM ✦</div>
-</div>
+<section class="wrap clients">
+  <div class="eyebrow">CLIENTS AND PARTNERS</div>
+  <div class="logo-grid">
+    <a class="logo-tile" href="https://chatoverflow.dev" target="_blank" rel="noopener">
+      <img class="logo-mark" src="assets/clients/chatoverflow-mark-white.png" alt="">
+      <div class="logo-word">ChatOverflow</div>
+    </a>
+    <a class="logo-tile" href="https://voiceos.com" target="_blank" rel="noopener"><img src="assets/clients/voiceos-white.png" alt="VoiceOS" style="max-height:30px"></a>
+    <a class="logo-tile" href="https://replit.com" target="_blank" rel="noopener"><img src="assets/clients/replit-light.png" alt="Replit" style="max-height:36px"></a>
+    <a class="logo-tile" href="https://optiver.com" target="_blank" rel="noopener"><img src="assets/clients/optiver.png" alt="Optiver" style="max-height:32px"></a>
+    <a class="logo-tile" href="https://databricks.com" target="_blank" rel="noopener"><img src="assets/clients/databricks-light.png" alt="Databricks" style="max-height:30px"></a>
+    <a class="logo-tile" href="https://www.microsoft.com/copilot" target="_blank" rel="noopener"><img src="assets/clients/copilot-lockup-dark.png" alt="Microsoft Copilot" style="max-height:38px"></a>
+    <a class="logo-tile" href="https://lovable.dev" target="_blank" rel="noopener"><img src="assets/clients/lovable-light.png" alt="Lovable" style="max-height:30px"></a>
+    <a class="logo-tile" href="https://spacex.com" target="_blank" rel="noopener"><img src="assets/clients/spacex-xai.png" alt="SpaceX xAI" style="max-height:44px"></a>
+    <a class="logo-tile" href="https://openai.com" target="_blank" rel="noopener">
+      <img class="logo-mark logo-invert" src="assets/clients/openai.svg" alt="">
+      <div class="logo-word">OpenAI</div>
+    </a>
+    <!-- ponytail: text placeholder until the real ElevenLabs logo file lands -->
+    <a class="logo-tile logo-tile-eleven" href="https://elevenlabs.io" target="_blank" rel="noopener">
+      <div class="eleven-bars"><span></span><span></span></div>
+      <div class="logo-word logo-word-lg">ElevenLabs</div>
+    </a>
+  </div>
+</section>
 
-<section>
-  <div class="section-head">
+<div class="light">
+  <section id="services" class="wrap">
     <h2>What we do</h2>
-  </div>
-  <figure class="section-photo">
-    <img src="assets/lecture.png" alt="A packed Agentic AI lecture at the SCD building — rows of students at laptops">
-    <figcaption>/// A Monday lecture at the SCD building — full house, donuts included</figcaption>
-  </figure>
-  <div class="grid-3">
-    <a class="card" href="events.html">
-      <p class="cat">Lecture + Build Nights · Mondays 7–9 PM</p>
-      <h3>Learn it, then build it</h3>
-      <p>A short lecture on agentic AI, then laptops open — build real agents alongside other members, often with sponsors like Microsoft Copilot. No prerequisites, all majors.</p>
+    <div class="services">
+      <div class="service"><div class="service-n">01</div><div class="service-title">AI strategy</div><div class="service-text">Where AI pays off in your workflow.</div></div>
+      <div class="service"><div class="service-n">02</div><div class="service-title">Build and deploy</div><div class="service-text">A staffed team ships it in a semester.</div></div>
+      <div class="service"><div class="service-n">03</div><div class="service-title">Agents and integrations</div><div class="service-text">Voice, MCP and the tools you already use.</div></div>
+      <div class="service"><div class="service-n">04</div><div class="service-title">Workshops and events</div><div class="service-text">Hands-on build nights for your team.</div></div>
+    </div>
+  </section>
+
+  <section id="work" class="wrap wrap-flush">
+    <div class="section-top">
+      <h2>Selected work</h2>
+      <div class="tabs" role="group" aria-label="Filter work">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="inhouse" aria-pressed="false">In-house</button>
+        <button type="button" data-filter="oss" aria-pressed="false">Open source</button>
+      </div>
+    </div>
+
+    <a class="feature" href="https://voiceos.com" target="_blank" rel="noopener">
+      <img class="feature-img" src="assets/projects/voiceos.png" alt="VoiceOS — Voice is your new keyboard">
+      <div class="feature-body">
+        <div>
+          <div class="pills"><div class="pill pill-orange">LIVE CLIENT</div><div class="pill">VOICEOS · YC P25</div></div>
+          <div class="feature-title">MCP integrations for a voice-first OS</div>
+        </div>
+        <div class="leads">
+          <div class="avatars">
+            <img src="assets/team/anirudh-konidala.png" alt="">
+            <img src="assets/team/syafino-yunalfian.png" alt="">
+          </div>
+          <div class="leads-text">Led by Anirudh and Syafino</div>
+        </div>
+      </div>
     </a>
-    <a class="card" href="projects.html">
-      <p class="cat">Projects</p>
-      <h3>30+ shipped last semester</h3>
-      <p>Member-built agents, tools, and demos — from CRM assistants to voice-to-workflow pipelines. The proof is on the projects page.</p>
+
+    <a class="client-row" href="https://chatoverflow.dev" target="_blank" rel="noopener">
+      <div class="client-main">
+        <img class="client-logo" src="assets/chatoverflow.png" alt="ChatOverflow">
+        <div>
+          <div class="pills"><div class="pill pill-orange">LIVE CLIENT</div><div class="pill">A16Z SR007</div></div>
+          <div class="feature-title client-title">ChatOverflow</div>
+        </div>
+      </div>
+      <div class="client-term">FALL 2026 → SPRING 2027</div>
     </a>
-  </div>
-</section>
 
-<section>
-  <div class="section-head">
-    <h2>By the numbers</h2>
-  </div>
-  <div class="stats">
-    <div class="stat"><div class="num">#1</div><div class="lbl">Largest AI club at UIUC</div></div>
-    <div class="stat"><div class="num">30+</div><div class="lbl">Projects shipped last semester</div></div>
-    <div class="stat"><div class="num">12</div><div class="lbl">Weeks of lectures &amp; workshops</div></div>
-    <div class="stat"><div class="num">11</div><div class="lbl">Exec &amp; alumni mentors</div></div>
-  </div>
-</section>
-
-<section>
-  <div class="section-head">
-    <h2>This semester</h2>
-    <span class="count">BUILD NIGHTS · MONDAYS 7–9 PM</span>
-  </div>
-  <div class="week">
-    <div class="wk">Oct 12</div>
-    <div class="slot"><p class="day">Mon · 7:30 PM · Build Night</p><h4>Agent Build Night supported by <span class="co">Microsoft Copilot</span></h4></div>
-    <div class="slot"><p>Siebel Center for Design · 50 guests</p></div>
-  </div>
-  <div class="week">
-    <div class="wk">Oct 5</div>
-    <div class="slot"><p class="day">Mon · 7:00 PM · Build Night</p><h4><span class="co">Jev</span> Build Night</h4></div>
-    <div class="slot"><p>Siebel Center for Design · 34 guests</p></div>
-  </div>
-  <div class="week">
-    <div class="wk">Sep 21</div>
-    <div class="slot"><p class="day">Mon · Talk</p><h4><span class="co">Optiver</span> Talk &amp; Recruiting Event</h4></div>
-    <div class="slot"></div>
-  </div>
-  <div class="week">
-    <div class="wk">Sep 13</div>
-    <div class="slot"><p class="day">Sun · Workshop</p><h4>Agentic AI Workshop with Founders Illinois</h4></div>
-    <div class="slot"></div>
-  </div>
-  <div class="week">
-    <div class="wk">Sep 8</div>
-    <div class="slot"><p class="day">Tue · Q&amp;A</p><h4><span class="co">Vals AI</span> Live Recruiter &amp; Engineer Q&amp;A</h4></div>
-    <div class="slot"></div>
-  </div>
-  <div class="week">
-    <div class="wk">Sep 3</div>
-    <div class="slot"><p class="day">Thu · Build Night</p><h4><span class="co">SpaceXAI</span> Build Night: GrokBot</h4></div>
-    <div class="slot"></div>
-  </div>
-  <p style="margin-top:26px"><a class="btn btn-ghost btn-sm" href="events.html">All events →</a></p>
-</section>
-
-<div class="cta-band">
-  <h2>Stop watching.<br>Start shipping.</h2>
-  <p>Join 600+ Illinois students building the agentic future. No experience required — just show up on Monday.</p>
-  <a class="btn btn-fill" href="join.html">Join Agentic AI</a>
+    <div class="project-grid">
+      <a class="project" data-kind="inhouse" href="https://github.com/Agentic-AI-UIUC/Agentic-Medical-Voice-Agent" target="_blank" rel="noopener"><div class="project-cat">IN-HOUSE · HEALTHCARE</div><div class="project-title">Medical Voice Agent</div><div class="project-view">View ↗</div></a>
+      <a class="project" data-kind="inhouse" href="https://github.com/Agentic-AI-UIUC/agentic-ai-healthcare-search" target="_blank" rel="noopener"><div class="project-cat">IN-HOUSE · HEALTHCARE</div><div class="project-title">Metalist</div><div class="project-view">View ↗</div></a>
+      <a class="project" data-kind="inhouse" href="https://github.com/Agentic-AI-UIUC/Resrv" target="_blank" rel="noopener"><div class="project-cat">IN-HOUSE · CAMPUS</div><div class="project-title">Resrv</div><div class="project-view">View ↗</div></a>
+      <a class="project" data-kind="oss" href="https://github.com/OpenAgents-Illinois/Aegis" target="_blank" rel="noopener"><div class="project-cat">OPEN SOURCE · INFRA</div><div class="project-title">Aegis</div><div class="project-view">View ↗</div></a>
+      <a class="project" data-kind="oss" href="https://github.com/OpenAgents-Illinois/market-pulse" target="_blank" rel="noopener"><div class="project-cat">OPEN SOURCE · FINANCE</div><div class="project-title">market-pulse</div><div class="project-view">View ↗</div></a>
+      <a class="project" data-kind="oss" href="https://github.com/OpenAgents-Illinois/f1-strategist.ai" target="_blank" rel="noopener"><div class="project-cat">OPEN SOURCE · SPORTS</div><div class="project-title">f1-strategist.ai</div><div class="project-view">View ↗</div></a>
+    </div>
+  </section>
 </div>
 
-<footer>
-  <a class="logo" href="index.html"><img src="assets/logo.png" alt="Agentic AI"></a>
-  <ul>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="events.html">Events</a></li>
-    <li><a href="join.html">Join</a></li>
-  </ul>
-  <span>Agentic AI @ UIUC · Urbana-Champaign, IL</span>
+<section id="community" class="wrap">
+  <h2>Built together</h2>
+  <div class="community-grid">
+    <div class="gallery">
+      <div class="gallery-main">
+        <img src="assets/events-hero.jpg" alt="Students at a build night">
+        <div class="gallery-caption">Build Night · SCD Sunset Studio</div>
+      </div>
+      <img src="assets/lecture.png" alt="Lecture">
+      <img src="assets/scd-night.png" alt="Siebel Center for Design at night">
+    </div>
+
+    <div class="community-side">
+      <div class="events-card">
+        <div class="events-head"><div>RECENT EVENTS</div><div>FALL 2026</div></div>
+        <div class="events-list">
+          <div class="event"><div class="event-date">Nov 16</div><div class="event-title">Build Night + Live Q&amp;A</div><div class="event-with">VoiceOS</div></div>
+          <div class="event"><div class="event-date">Nov 6</div><div class="event-title">Build Night + Networking</div><div class="event-with">Replit · CUBE</div></div>
+          <div class="event"><div class="event-date">Nov 5</div><div class="event-title">Build Night</div><div class="event-with">Lovable</div></div>
+          <div class="event"><div class="event-date">Oct 12</div><div class="event-title">Agent Build Night</div><div class="event-with">Microsoft</div></div>
+          <div class="event"><div class="event-date">Sep 21</div><div class="event-title">An Evening with Optiver</div><div class="event-with">Optiver</div></div>
+        </div>
+      </div>
+      <div class="socials">
+        <a class="social" href="https://www.instagram.com/agenticaiuiuc/" target="_blank" rel="noopener">
+          <div class="social-ig-head"><img src="assets/agentic-mark-black.png" alt="">agenticai.uiuc</div>
+          <img class="social-ig-photo" src="assets/team-hero.jpg" alt="">
+          <div class="social-ig-caption">Replit came to UIUC 🧡 Thank you to everyone who came out to Build Night.</div>
+        </a>
+        <div class="social social-li">
+          <div class="social-li-head">
+            <div class="social-li-tile"><img src="assets/agentic-mark-white.png" alt=""></div>
+            <div><a class="social-li-name social-stretch" href="https://www.linkedin.com/company/agentic-ai-uiuc/" target="_blank" rel="noopener">Agentic AI @ UIUC</a><div class="social-li-sub">LinkedIn</div></div>
+          </div>
+          <div class="social-li-text">Learn how voice agents work, straight from a YC founder. Build Night + Live Q&amp;A with Maksim Liashch, COO of VoiceOS.</div>
+          <a class="discord-button" href="https://discord.gg/PyGcv3VufB" target="_blank" rel="noopener">Join our Discord <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="light">
+  <section id="people" class="wrap">
+    <div class="section-top section-top-people">
+      <h2>The people who ship it</h2>
+      <a class="link-accent" href="team.html">Full team ↗</a>
+    </div>
+    <div class="devs">
+      <div class="eyebrow">OUR DEVELOPERS ARE FROM</div>
+      <div class="dev-grid">
+        <div class="dev-tile"><img src="assets/devs/brunswick.png" alt="Brunswick" style="height:14px"></div>
+        <div class="dev-tile"><img src="assets/devs/tmobile.svg" alt="">T-Mobile</div>
+        <div class="dev-tile"><img class="dev-wordmark dev-mono" src="assets/clients/voiceos-white.png" alt="VoiceOS"></div>
+        <div class="dev-tile"><img src="assets/devs/illinois.png" alt="Illinois" style="height:26px"></div>
+        <div class="dev-tile"><img class="dev-wordmark-svg" src="assets/devs/samsung.svg" alt="Samsung"></div>
+        <div class="dev-tile"><img src="assets/devs/nvidia.svg" alt="">NVIDIA</div>
+        <div class="dev-tile"><img src="assets/devs/snowflake.svg" alt="">Snowflake</div>
+        <div class="dev-tile"><img class="dev-wordmark-svg" style="height:24px" src="assets/devs/ibm.svg" alt="IBM"></div>
+        <div class="dev-tile"><img src="assets/devs/ycombinator.svg" alt="">Y Combinator</div>
+        <div class="dev-tile"><img class="dev-wordmark" src="assets/devs/databricks.png" alt="Databricks"></div>
+        <div class="dev-tile"><img src="assets/clients/openai.svg" alt="">OpenAI</div>
+        <div class="dev-tile"><img src="assets/devs/ericsson.svg" alt="">Ericsson</div>
+        <div class="dev-tile"><img src="assets/devs/epicgames.svg" alt="">Epic Games</div>
+      </div>
+    </div>
+    <div class="eyebrow eyebrow-board">MEMBERS OF TECHNICAL STAFF</div>
+    <div class="staff-grid">
+      <a class="board-card" href="https://www.linkedin.com/in/anirudh-konidala/" target="_blank" rel="noopener">
+        <img class="board-photo" src="assets/team/anirudh-konidala.png" alt="Anirudh Konidala">
+        <div class="board-body"><div class="board-name">Anirudh Konidala</div><div class="board-role">President · MTS</div><div class="board-tag">Lead · VoiceOS MCP</div></div>
+      </a>
+      <a class="board-card" href="https://www.linkedin.com/in/syafino-yunalfian/" target="_blank" rel="noopener">
+        <img class="board-photo" src="assets/team/syafino-yunalfian.png" alt="Syafino Yunalfian">
+        <div class="board-body"><div class="board-name">Syafino Yunalfian</div><div class="board-role">Board · MTS</div><div class="board-tag">Lead · VoiceOS MCP</div></div>
+      </a>
+      <a class="board-card" href="https://www.linkedin.com/in/aadivya-raushan-245264240/" target="_blank" rel="noopener">
+        <img class="board-photo" src="assets/team/aadivya-raushan.png" alt="Aadivya Raushan">
+        <div class="board-body"><div class="board-name">Aadivya Raushan</div><div class="board-role">Board · MTS</div></div>
+      </a>
+      <a class="staff" href="https://www.linkedin.com/in/jonah-chiss/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/jonah-chiss.png" alt="Jonah Chiss"><div class="staff-name">Jonah Chiss</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/omersajid9/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/omer-sajid.png" alt="Omer Sajid"><div class="staff-name">Omer Sajid</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/pranavp27/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/pranav-palagummi.jpg" alt="Pranav Palagummi"><div class="staff-name">Pranav Palagummi</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/ekansh-arora/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/ekansh-arora.jpg" alt="Ekansh Arora"><div class="staff-name">Ekansh Arora</div><div class="board-role">MTS</div></a>
+      <!-- ponytail: initials until David's photo exists -->
+      <a class="staff" href="https://www.linkedin.com/in/jinseop-song/" target="_blank" rel="noopener"><div class="staff-photo staff-initials" aria-hidden="true">DS</div><div class="staff-name">David Song</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/wuyuedev/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/yue-wu.jpg" alt="Yue Wu"><div class="staff-name">Yue Wu</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/thomas-isaac1/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/thomas-isaac.png" alt="Thomas Isaac"><div class="staff-name">Thomas Isaac</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/ducvo121/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/duc-vo.jpg" alt="Duc Vo"><div class="staff-name">Duc Vo</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/rb-rishabh/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/rishabh-bansal.png" alt="Rishabh Bansal"><div class="staff-name">Rishabh Bansal</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/prerakmodi/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/prerak-modi.jpg" alt="Prerak Modi"><div class="staff-name">Prerak Modi</div><div class="board-role">MTS</div></a>
+      <a class="staff" href="https://www.linkedin.com/in/aslanwang/" target="_blank" rel="noopener"><img class="staff-photo" src="assets/team/aslan-wang.png" alt="Aslan Wang"><div class="staff-name">Aslan Wang</div><div class="board-role">MTS</div></a>
+    </div>
+  </section>
+</div>
+
+<section id="join" class="wrap">
+  <div class="doors">
+    <div class="door">
+      <div class="eyebrow">FOR COMPANIES</div>
+      <div class="door-title">Bring us a problem.</div>
+      <a class="button button-light door-cta" href="mailto:agenticaiuiuc@gmail.com">Email agenticaiuiuc@gmail.com</a>
+    </div>
+    <div class="door door-orange">
+      <div class="eyebrow">FOR STUDENTS</div>
+      <div class="door-title">Join a delivery team.</div>
+      <div class="button-row">
+        <!-- placeholder link: point at the real application -->
+        <a class="button button-ink" href="#">Apply</a>
+        <a class="button button-outline-ink" href="https://discord.gg/PyGcv3VufB" target="_blank" rel="noopener">Join the Discord</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img src="assets/agentic-white.png" alt="Agentic AI @ UIUC">
+    <div class="footer-links">
+      <a href="https://discord.gg/PyGcv3VufB" target="_blank" rel="noopener">Discord</a>
+      <a href="https://github.com/orgs/Agentic-AI-UIUC/repositories" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/orgs/OpenAgents-Illinois/repositories" target="_blank" rel="noopener">Open source</a>
+      <a href="socials.html">Socials</a>
+    </div>
+    <div class="footer-copy">© 2026 · Urbana-Champaign, IL</div>
+  </div>
 </footer>
+
+<script src="hero-waves.js"></script>
+<script>
+  const tabs = document.querySelectorAll('.tabs button');
+  tabs.forEach(b => b.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-pressed', x === b));
+    document.querySelectorAll('.project').forEach(c => {
+      c.hidden = b.dataset.filter !== 'all' && c.dataset.kind !== b.dataset.filter;
+    });
+  }));
+</script>
 
 </body>
 </html>
