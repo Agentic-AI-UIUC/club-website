@@ -575,3 +575,13 @@ a.client-row:hover { color: var(--fg); }
 /* thank-you line above the client logos */
 .clients-thanks { margin-bottom: 20px; font-size: clamp(16px, 1.5vw, 19px); line-height: 1.45; color: #C9CFDA; }
 .yc-word { font-weight: 600; font-size: 19px; letter-spacing: -0.02em; color: #F26522; }
+
+/* selected work: hover lift so the VoiceOS / ChatOverflow cards read as clickable */
+.feature, .client-row { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.feature:hover, a.client-row:hover { transform: translateY(-4px); box-shadow: 0 0 0 2px var(--accent), 0 18px 40px -18px rgba(11, 14, 20, 0.5); }
+.feature-img { transition: transform 0.3s ease; }
+.feature:hover .feature-img { transform: scale(1.02); }
+@media (prefers-reduced-motion: reduce) {
+  .feature, .client-row, .feature-img { transition: none; }
+  .feature:hover, a.client-row:hover, .feature:hover .feature-img { transform: none; }
+}
