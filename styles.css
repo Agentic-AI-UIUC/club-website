@@ -568,3 +568,7 @@ a.client-row:hover { color: var(--fg); }
   .gallery img { height: 150px; }
   .gallery .gallery-main img { height: 210px; }
 }
+
+/* emphasize the "for companies / for students" labels */
+.door .eyebrow { font-size: 16px; font-weight: 600; color: var(--fg); }
+.door-orange .eyebrow { color: var(--bg); }
