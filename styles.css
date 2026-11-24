@@ -549,3 +549,10 @@ a.social:hover, .social-li:has(.social-stretch:hover) { box-shadow: 0 0 0 2px va
 .social-link-open { margin-top: auto; padding-top: 18px; font: 500 13px var(--mono); color: var(--accent); }
 .topnav-links a[aria-current="page"] { color: var(--fg); }
 a.client-row:hover { color: var(--fg); }
+
+/* "backed by" investor line in the VoiceOS / ChatOverflow cards */
+.backer { margin-top: 18px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.backer-label { font: 500 11px var(--mono); letter-spacing: 0.12em; color: var(--dim-dark); }
+.backer-yc { height: 24px; width: auto; }
+.backer-name { font-size: 17px; font-weight: 600; letter-spacing: -0.02em; color: #FFFFFF; }
+.backer-a16z { height: 24px; width: auto; border-radius: 4px; }
